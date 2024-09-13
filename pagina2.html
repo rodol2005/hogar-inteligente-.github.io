@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pagina2.css">
+    <title>Iluminación Inteligente</title>
+    
+    <script>
+        function showLargeImage(imageSrc) {
+            const overlay = document.getElementById('overlay');
+            const largeImage = document.getElementById('largeImage');
+            largeImage.src = imageSrc;
+            overlay.style.display = 'flex';
+        }
+
+        function hideLargeImage() {
+            const overlay = document.getElementById('overlay');
+            overlay.style.display = 'none';
+        }
+    </script>
+</head>
+<body>
+
+<div class="container">
+    <h1>Iluminación Inteligente: Controla la Luz de tu Hogar con Tecnología</h1>
+    <h2>¿Qué es la Iluminación Inteligente?</h2>
+    <p class="justified-paragraph">La iluminación inteligente permite controlar la luz de tu hogar a través de dispositivos como smartphones y asistentes virtuales, brindando comodidad y eficiencia energética.</p>
+    
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/2dr_SbOMtKQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    <h2>Ventajas de Usar Iluminación Inteligente</h2>
+    <p class="justified-paragraph">La iluminación inteligente ofrece múltiples ventajas, como la comodidad de controlar las luces a distancia mediante aplicaciones móviles o asistentes virtuales, lo que permite ajustar la iluminación según las necesidades y horarios del usuario. Además, ayuda a reducir el consumo de energía y los costos eléctricos gracias a la posibilidad de programar apagados automáticos y regular la intensidad lumínica. También mejora la seguridad del hogar al simular la presencia de personas, incluso cuando no estás en casa, y proporciona una personalización avanzada con opciones de colores y escenas que se adaptan a diferentes ambientes y estados de ánimo.</p>
+
+    <div class="gallery">
+        
+        <div class="gallery-item">
+            <img src="imagenes_video/Bombilla Inteligente.jpg" alt="Bombilla Inteligente" onclick="showLargeImage('imagenes_video/Bombilla Inteligente.jpg')">
+            <p class="description">Bombilla Inteligente: Estas bombillas pueden ser controladas desde tu smartphone o con comandos de voz a través de asistentes virtuales. Puedes ajustar el brillo, programar horarios y, en algunos modelos, incluso cambiar el color de la luz para adaptarse a cualquier ambiente.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="imagenes_video/Tira LED Inteligente.jpg" alt="Tira LED Inteligente" onclick="showLargeImage('imagenes_video/Tira LED Inteligente.jpg')">
+            <p class="description">Tira LED Inteligente: Las tiras LED inteligentes son versátiles y se pueden instalar en diversas superficies. Son ideales para añadir iluminación de acento en muebles, escaleras o incluso detrás de televisores. Ofrecen una amplia gama de colores y efectos de iluminación, controlables desde tu dispositivo móvil.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="imagenes_video/Luz de Ambiente.jpg" alt="Luz de Ambiente" onclick="showLargeImage('imagenes_video/Luz de Ambiente.jpg')">
+            <p class="description">Luz de Ambiente: Esta luz está diseñada para crear una atmósfera acogedora en cualquier habitación. Con la capacidad de cambiar de color y ajustar la intensidad, es perfecta para establecer el estado de ánimo adecuado para cualquier ocasión, desde cenas íntimas hasta noches de cine.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="imagenes_video/Interruptor Inteligente.png" alt="Interruptor Inteligente" onclick="showLargeImage('imagenes_video/Interruptor Inteligente.png')">
+            <p class="description">Interruptor Inteligente: Este interruptor sustituye a los interruptores tradicionales y te permite controlar las luces de tu hogar con un toque en tu smartphone o mediante comandos de voz. Es compatible con una amplia gama de dispositivos de iluminación, ofreciendo un control total sin necesidad de bombillas inteligentes.</p>
+        </div>
+    </div>
+
+    
+    <div id="overlay" class="overlay" onclick="hideLargeImage()">
+        <img id="largeImage" class="large-image" src="" alt="">
+    </div>
+
+    <button class="button" onclick="window.location.href='index.html'">Página Principal</button>
+</div>
+
+</body>
+</html>
+

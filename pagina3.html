@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pagina3.css">
+    <title>Seguridad en el Hogar Inteligente</title>
+    
+    <script>
+        function showLargeImage(imageSrc) {
+            const overlay = document.getElementById('overlay');
+            const largeImage = document.getElementById('largeImage');
+            largeImage.src = imageSrc;
+            overlay.style.display = 'flex';
+        }
+
+        function hideLargeImage() {
+            const overlay = document.getElementById('overlay');
+            overlay.style.display = 'none';
+        }
+    </script>
+</head>
+<body>
+
+<div class="container">
+    <h1>Seguridad en el Hogar Inteligente: Protege tu Hogar con Tecnología Avanzada</h1>
+    <h2>¿Qué es la Seguridad en el Hogar Inteligente?</h2>
+    <p class="justified-paragraph">Los sistemas de seguridad en el hogar inteligente te permiten monitorear y proteger tu casa a través de dispositivos conectados como cámaras y sensores, que puedes controlar desde tu smartphone. Estos sistemas están diseñados para brindar tranquilidad, permitiéndote saber lo que sucede en tu hogar en tiempo real, estés donde estés.</p>
+    
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ulMMpxHGSQQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    <h2>Beneficios de Usar Sistemas de Seguridad Inteligentes</h2>
+    <p class="justified-paragraph">Con los sistemas de seguridad inteligentes, puedes recibir alertas en tiempo real, ver video en vivo, y controlar el acceso a tu hogar desde cualquier lugar. Estos sistemas son altamente personalizables y pueden integrarse con otros dispositivos inteligentes para una protección completa. Además, muchos de estos sistemas incluyen funciones avanzadas como el reconocimiento facial, la detección de movimiento, y la grabación en la nube, garantizando una mayor seguridad y tranquilidad.</p>
+
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="imagenes_video/Cámara de Seguridad.jpg" alt="Cámara de Seguridad" onclick="showLargeImage('imagenes_video/Cámara de Seguridad.jpg')">
+            <p class="description">Cámara de Seguridad: Las cámaras de seguridad inteligentes te permiten monitorear tu hogar en tiempo real desde cualquier lugar. Muchas ofrecen video en alta definición, visión nocturna y notificaciones de movimiento, garantizando que siempre estés al tanto de lo que ocurre en tu hogar.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="imagenes_video/Cerradura Inteligente.jpg" alt="Cerradura Inteligente" onclick="showLargeImage('imagenes_video/Cerradura Inteligente.jpg')">
+            <p class="description">Cerradura Inteligente: Estas cerraduras te permiten controlar el acceso a tu hogar de forma remota, sin necesidad de llaves. Puedes otorgar acceso temporal a invitados o empleados del hogar y recibir notificaciones cuando alguien entra o sale.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="imagenes_video/Sensor de Movimiento.jpg" alt="Sensor de Movimiento" onclick="showLargeImage('imagenes_video/Sensor de Movimiento.jpg')">
+            <p class="description">Sensor de Movimiento: Los sensores de movimiento son esenciales para detectar cualquier actividad sospechosa en tu hogar. Pueden activar automáticamente luces o alarmas y enviarte alertas a tu smartphone en caso de detección de movimiento inesperado.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="imagenes_video/Alarma Inteligente.jpg" alt="Alarma Inteligente" onclick="showLargeImage('imagenes_video/Alarma Inteligente.jpg')">
+            <p class="description">Alarma Inteligente: Las alarmas inteligentes se integran con otros dispositivos de seguridad para ofrecerte una protección completa. Pueden activarse manualmente o en respuesta a señales de sensores, enviándote notificaciones instantáneas para que tomes acción rápidamente.</p>
+        </div>
+    </div>
+
+    <div id="overlay" class="overlay" onclick="hideLargeImage()">
+        <img id="largeImage" class="large-image" src="" alt="">
+    </div>
+
+    <button class="button" onclick="window.location.href='index.html'">Página Principal</button>
+</div>
+
+</body>
+</html>

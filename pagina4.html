@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pagina4.css">
+    <title>Control de Clima y Termostatos Inteligentes</title>
+   
+    <script>
+        function showLargeImage(imageSrc) {
+            const overlay = document.getElementById('overlay');
+            const largeImage = document.getElementById('largeImage');
+            largeImage.src = imageSrc;
+            overlay.style.display = 'flex';
+        }
+
+        function hideLargeImage() {
+            const overlay = document.getElementById('overlay');
+            overlay.style.display = 'none';
+        }
+    </script>
+</head>
+<body>
+
+<div class="container">
+    <h1>Control de Clima y Termostatos Inteligentes: Optimiza el Confort de tu Hogar</h1>
+    <h2>¿Qué Son los Termostatos Inteligentes?</h2>
+    <p class="justified-paragraph">Los termostatos inteligentes permiten controlar la temperatura de tu hogar de manera eficiente, ajustándose automáticamente a tus preferencias y horarios, y pudiendo ser controlados a distancia a través de aplicaciones móviles.</p>
+    
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/8OwEOXTUKX4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    <h2>Beneficios del Control de Clima Inteligente</h2>
+    <p class="justified-paragraph">Estos sistemas proporcionan ahorro energético, mayor confort, y la posibilidad de ajustar la temperatura de tu hogar desde cualquier lugar, mejorando la eficiencia del sistema de climatización.</p>
+
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="imagenes_video/ermostato Inteligente Moderno.jpg" alt="Termostato Inteligente Moderno" onclick="showLargeImage('imagenes_video/ermostato Inteligente Moderno.jpg')">
+            <p class="description">Termostato Inteligente Moderno: Un dispositivo de última generación que permite un control preciso y eficiente de la temperatura de tu hogar, ajustándose automáticamente a tus hábitos y preferencias para maximizar el confort y el ahorro de energía.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="imagenes_video/sistema de control de clima.jpg" alt="Sistema de Control de Clima" onclick="showLargeImage('imagenes_video/sistema de control de clima.jpg')">
+            <p class="description">Sistema de Control de Clima: Integra varios dispositivos inteligentes para crear un ambiente perfecto en tu hogar. Estos sistemas permiten ajustar no solo la temperatura, sino también la humedad y la ventilación, garantizando un confort total.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="imagenes_video/Aplicación de Termostato Inteligente.png" alt="Aplicación de Termostato Inteligente" onclick="showLargeImage('imagenes_video/Aplicación de Termostato Inteligente.png')">
+            <p class="description">Aplicación de Termostato Inteligente: Controla todos los aspectos de la climatización de tu hogar desde tu smartphone. Estas aplicaciones permiten monitorizar y ajustar la temperatura en tiempo real, además de programar ajustes automáticos según tus horarios.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="imagenes_video/Termostato Antiguo.jpg" alt="Termostato Antiguo" onclick="showLargeImage('imagenes_video/Termostato Antiguo.jpg')">
+            <p class="description">Termostato Antiguo: Aunque menos sofisticados que los modelos modernos, los termostatos antiguos son el antecedente de la tecnología inteligente en el control de clima, ofreciendo un enfoque más manual pero aún efectivo para la regulación de la temperatura en el hogar.</p>
+        </div>
+    </div>
+
+    <div id="overlay" class="overlay" onclick="hideLargeImage()">
+        <img id="largeImage" class="large-image" src="" alt="">
+    </div>
+
+    <button class="button" onclick="window.location.href='index.html'">Página Principal</button>
+</div>
+
+</body>
+</html>

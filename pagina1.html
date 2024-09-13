@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pagina1.css">
+    <title>Asistentes Virtuales</title>
+    
+    <script>
+        function showLargeImage(imageSrc) {
+            const overlay = document.getElementById('overlay');
+            const largeImage = document.getElementById('largeImage');
+            largeImage.src = imageSrc;
+            overlay.style.display = 'flex';
+        }
+
+        function hideLargeImage() {
+            const overlay = document.getElementById('overlay');
+            overlay.style.display = 'none';
+        }
+    </script>
+</head>
+<body>
+
+<div class="container">
+    <h1>Asistentes Virtuales: Tu Compañero en el Hogar Inteligente</h1>
+    <h2>¿Qué es un Asistente Virtual?</h2>
+    <p class="justified-paragraph">Los asistentes virtuales son dispositivos controlados por voz que te ayudan a gestionar tareas diarias, controlar otros dispositivos inteligentes en tu hogar, y mucho más. Estos dispositivos ofrecen una forma conveniente de interactuar con la tecnología de tu hogar, mejorando tu comodidad y eficiencia.</p>
+    
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/92Q_Z67l-AU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    <h2>Principales Asistentes Virtuales del Mercado</h2>
+    <p class="justified-paragraph">Aquí exploramos algunos de los asistentes virtuales más populares disponibles hoy en día. Cada uno de ellos ofrece características únicas para adaptarse a tus necesidades específicas y mejorar tu experiencia en un hogar inteligente.</p>
+
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="imagenes_video/amazon alexa.jpg" alt="Amazon Alexa" onclick="showLargeImage('imagenes_video/amazon alexa.jpg')">
+            <p class="description">Amazon Alexa: Conocida por su amplia compatibilidad con dispositivos inteligentes y su capacidad para realizar una variedad de tareas mediante comandos de voz.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="imagenes_video/Google Home.jpg" alt="Google Home" onclick="showLargeImage('imagenes_video/Google Home.jpg')">
+            <p class="description">Google Home: Ofrece integración con el ecosistema de Google y puede ayudarte a realizar búsquedas, controlar dispositivos y mucho más.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="imagenes_video/Apple Siri.jpg" alt="Apple Siri" onclick="showLargeImage('imagenes_video/Apple Siri.jpg')">
+            <p class="description">Apple Siri: Integrado con los dispositivos Apple, Siri permite la gestión de tareas y el control de dispositivos dentro del ecosistema Apple.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="imagenes_video/Microsoft Cortana.jpg" alt="Microsoft Cortana" onclick="showLargeImage('imagenes_video/Microsoft Cortana.jpg')">
+            <p class="description">Microsoft Cortana: Diseñado para integrarse con el sistema operativo Windows, Cortana ofrece asistencia en la organización y gestión de tareas.</p>
+        </div>
+    </div>
+
+    <div id="overlay" class="overlay" onclick="hideLargeImage()">
+        <img id="largeImage" class="large-image" src="" alt="">
+    </div>
+
+    <button class="button" onclick="window.location.href='index.html'">Página Principal</button>
+</div>
+
+</body>
+</html>
